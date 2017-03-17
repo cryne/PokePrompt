@@ -1,0 +1,6 @@
+﻿  btree.cpp
+  btreenode.cpp
+  Generating Code...
+  btree.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  proyectoArbol2.vcxproj -> C:\Users\Romero\Desktop\PokePrompt\proyectoArbol2\Debug\proyectoArbol2.exe
+  proyectoArbol2.vcxproj -> C:\Users\Romero\Desktop\PokePrompt\proyectoArbol2\Debug\proyectoArbol2.pdb (Partial PDB)
