@@ -1,13 +1,15 @@
 #pragma once
-
+#include <string>
+#include <iostream>
 namespace proyectoArbol2 {
-
+	using namespace std;
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using std::string;
 
 	/// <summary>
 	/// Resumen de MyForm
@@ -34,7 +36,15 @@ namespace proyectoArbol2 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::RichTextBox^  richTextBox1;
+	private: System::Windows::Forms::RichTextBox^  RichTextBox1;
+	protected:
+
+	private: System::Windows::Forms::Button^  button1;
+	protected:
+
+	protected:
+
+
 	protected:
 
 	private:
@@ -50,26 +60,40 @@ namespace proyectoArbol2 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
+			this->RichTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// richTextBox1
+			// RichTextBox1
 			// 
-			this->richTextBox1->BackColor = System::Drawing::Color::Black;
-			this->richTextBox1->ForeColor = System::Drawing::Color::White;
-			this->richTextBox1->Location = System::Drawing::Point(3, 1);
-			this->richTextBox1->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
-			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(699, 408);
-			this->richTextBox1->TabIndex = 0;
-			this->richTextBox1->Text = L"";
+			this->RichTextBox1->BackColor = System::Drawing::Color::Black;
+			this->RichTextBox1->ForeColor = System::Drawing::Color::White;
+			this->RichTextBox1->Location = System::Drawing::Point(13, 12);
+			this->RichTextBox1->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
+			this->RichTextBox1->Name = L"RichTextBox1";
+			this->RichTextBox1->Size = System::Drawing::Size(604, 341);
+			this->RichTextBox1->TabIndex = 0;
+			this->RichTextBox1->Text = L"";
+			this->RichTextBox1->Click += gcnew System::EventHandler(this, &MyForm::RichTextBox_Click);
+			this->RichTextBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::RichTextBox_TextChanged);
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(13, 375);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 1;
+			this->button1->Text = L"Aplicar";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(704, 410);
-			this->Controls->Add(this->richTextBox1);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->RichTextBox1);
 			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
@@ -79,5 +103,19 @@ namespace proyectoArbol2 {
 
 		}
 #pragma endregion
+	
+			 
+	private: System::Void RichTextBox_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+
+	private: System::Void RichTextBox_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+			 String ^ x = RichTextBox1->Text;
+			 if (x)
+			 {
+
+			 }
 	};
 }

@@ -14,7 +14,7 @@ public:
 	BTreeNode* search(int k);
 	void insert(int k);
 	//eliminar
-	void remove(int k);
+	void remove(int k);`
 };
 
 #endif // BTREE_H

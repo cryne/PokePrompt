@@ -22,7 +22,7 @@ void BTree::insert(int k) {
 		root->n = 1;
 	}
 	else {
-		if (root->n == 3) {
+		if (root->n == 2*t-1) {
 			BTreeNode *s = new BTreeNode(2, false);
 			s->C[0] = root;
 			s->splitChild(0, root);

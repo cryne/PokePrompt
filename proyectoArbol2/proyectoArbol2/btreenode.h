@@ -6,11 +6,12 @@
 using namespace std;
 
 class BTreeNode {
-	int *keys;//Arreglo de Keys
-	int t;//Degree minimo
-	BTreeNode **C;//Hijos
-	int n;//Número de Keys
-	bool leaf;//Plain af
+	int *keys;
+	int t;
+	string path;
+	BTreeNode **C;
+	int n;
+	bool leaf;
 public:
 	BTreeNode(int _t, bool _leaf);
 	void insertNonFull(int k);

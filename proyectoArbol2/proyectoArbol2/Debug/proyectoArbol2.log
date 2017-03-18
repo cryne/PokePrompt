@@ -1,6 +1,19 @@
-﻿  btree.cpp
+﻿  MyForm.cpp
+MyForm.cpp(4): error C2143: syntax error: missing ';' before 'using namespace'
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(75): error C2039: 'button1_Click': is not a member of 'proyectoArbol2::MyForm'
+  c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(17): note: see declaration of 'proyectoArbol2::MyForm'
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(75): error C2065: 'button1_Click': undeclared identifier
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(75): error C3924: error in argument #2 of delegate constructor call 'System::EventHandler':
+  c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(75): note: pointer to member function expected
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(85): error C2039: 'richTextBox1_TextChanged': is not a member of 'proyectoArbol2::MyForm'
+  c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(17): note: see declaration of 'proyectoArbol2::MyForm'
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(85): error C2065: 'richTextBox1_TextChanged': undeclared identifier
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(85): error C3924: error in argument #2 of delegate constructor call 'System::EventHandler':
+  c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(85): note: pointer to member function expected
+MyForm.cpp(8): error C2976: 'std::array': too few template arguments
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\utility(363): note: see declaration of 'std::array'
+MyForm.cpp(8): error C3699: '^': cannot use this indirection on type 'std::array'
+  MyForm.cpp(8): note: compiler replacing '^' with '*' to continue parsing
+c:\users\romero\desktop\pokeprompt\proyectoarbol2\proyectoarbol2\MyForm.h(4): fatal error C1075: the left brace '{' was unmatched at the end of the file
   btreenode.cpp
   Generating Code...
-  btree.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
-  proyectoArbol2.vcxproj -> C:\Users\Romero\Desktop\PokePrompt\proyectoArbol2\Debug\proyectoArbol2.exe
-  proyectoArbol2.vcxproj -> C:\Users\Romero\Desktop\PokePrompt\proyectoArbol2\Debug\proyectoArbol2.pdb (Partial PDB)

@@ -10,4 +10,5 @@ void main(array<String^>^argv) {
 	Application::SetCompatibleTextRenderingDefault(false);
 	proyectoArbol2::MyForm form;
 	Application::Run(%form);
+
 }
